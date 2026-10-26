@@ -56,3 +56,15 @@ Figma file: https://www.figma.com/design/LhwDSvEevMqDDAzPrLPamx
 - Cover headline: ≤ ~35 characters (3 lines at 128 px)
 - Story headline: ≤ 8 words; summary ≤ ~90 characters (2 lines); take ≤ 1–2 lines
 - Quick hits: ≤ ~40 characters each
+
+## AI imagery (hi3D)
+Test cover with an AI-generated hero (Nano-Banana 2, 3:4, 4 points):
+
+![AI × 3D printing test cover](cover-test-ai-x-3dp.png)
+
+Prompt pattern that matched the brand: *cinematic close-up, dark moody workshop, lime green rim light, shallow depth of field, photorealistic, high contrast, no text, no logos* + the story subject.
+
+Cost per image: Seedream v4.5 = 3 pts · Nano-Banana 2 = 4 · Nano-Banana-Pro = 6 · GPT Image 2 = 10.
+
+`tools/render_cover.py` renders a finished 1080×1350 cover outside Figma:
+`python3 tools/render_cover.py <fonts-dir> <hero.png> <out.png> "Headline"` (fonts: Space Grotesk, JetBrains Mono variable TTFs from google/fonts).
