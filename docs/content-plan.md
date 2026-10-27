@@ -15,8 +15,14 @@ Account: **@printyours.ca** (existing account; already connected to vidIQ and Za
 | Sat | 3D printing news |
 | Sun | 3D printing news + weekly recap carousel |
 
-AI × 3D printing topics: AI design / generative CAD, AI slicers and print settings,
-print-failure detection, AI-generated printable models, AI in print farms.
+AI × 3D printing topics — **AI 3D modeling is the priority**: text-to-3D and image-to-3D tools,
+generative CAD, AI-generated printable models. Also: AI slicers and print settings,
+print-failure detection, AI in print farms.
+
+### "AI → Print" series (one AI day per week)
+Generate a model with an AI tool (e.g. hi3D image-to-3D → GLB), print it, and post the result on the
+"Worth it?" slide: AI image + photo of the print + verdict (is it actually printable?).
+Pair with a short Reel of the print. If these perform, move from 2 to 3 AI days.
 
 ## Formats
 - **Daily post:** single image, Cover layout. Kicker = `3D PRINTING` or `AI × 3D PRINTING`.
