@@ -1,0 +1,15 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "quick-hits", "kicker": "How it works", "slide": "2/4", "handle": "@printyours.ca",
+     "headline": "Type it. Print it.",
+     "hits": ["Describe the model in a chat", "AI builds a textured 3D model", "It checks and repairs the mesh", "Exports a 3MF for your slicer"]},
+    {"type": "text", "kicker": "Good to know", "slide": "3/4",
+     "headline": "Free plugin, paid models",
+     "body": ["The plugin installs free in Hermes Agent, the open-source AI assistant from Nous Research.",
+              "Generating models needs a paid Meshy plan and uses credits. You approve the cost before each job."],
+     "take": "The hard part of AI models has always been the cleanup before printing. If the repair step holds up, that’s the real story."},
+    {"type": "cta", "slide": "4/4", "headline": "Follow for daily 3D printing news", "handle": "@printyours.ca",
+     "prompt": "Would you print an AI-generated model?", "footer": "Need something printed? DM us"}
+  ]
+}

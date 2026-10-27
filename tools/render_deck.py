@@ -143,7 +143,7 @@ def story(s):
 def quick_hits(s):
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
-    y = top_bar(d, "Quick hits", s["slide"]) + 48
+    y = top_bar(d, s.get("kicker", "Quick hits"), s["slide"]) + 48
     y = draw_block(d, SAFE, y, s["headline"], "headline", TEXT, CW) + 48
     text_x = SAFE + 80 + 32
     text_w = CW - 80 - 32
@@ -186,7 +186,28 @@ def cta(s):
     return img
 
 
-RENDER = {"story": story, "quick-hits": quick_hits, "cta": cta}
+def text(s):
+    """Text-only slide: headline, short paragraphs, and an optional take card pinned above the footer."""
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+    y = top_bar(d, s["kicker"], s["slide"]) + 48
+    y = draw_block(d, SAFE, y, s["headline"], "headline", TEXT, CW) + 40
+    for para in s.get("body", []):
+        y = draw_block(d, SAFE, y, para, "body", TEXT, CW) + 28
+    if s.get("take"):
+        take_w = CW - 32 - 40 - 8 - 28
+        take_h = 32 + STYLE["label"][2] + 10 + block_h("body-medium", s["take"], take_w) + 32
+        ty = H - SAFE - STYLE["label"][2] - 48 - take_h
+        d.rounded_rectangle([SAFE, ty, W - SAFE, ty + take_h], radius=32, fill=SURFACE)
+        d.rounded_rectangle([SAFE + 32, ty + 32, SAFE + 40, ty + take_h - 32], radius=4, fill=ACCENT)
+        tx = SAFE + 32 + 8 + 28
+        draw_line(d, tx, ty + 32, "My take:", "label", ACCENT)
+        draw_block(d, tx, ty + 32 + STYLE["label"][2] + 10, s["take"], "body-medium", TEXT, take_w)
+    footer(d, s.get("handle", "@printyours.ca"), "Swipe →")
+    return img
+
+
+RENDER = {"story": story, "quick-hits": quick_hits, "text": text, "cta": cta}
 os.makedirs(out_dir, exist_ok=True)
 for i, s in enumerate(spec["slides"], start=1):
     if s["type"] in RENDER:
