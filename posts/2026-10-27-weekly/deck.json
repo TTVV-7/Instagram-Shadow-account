@@ -1,0 +1,21 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "story", "kicker": "Story 01", "slide": "2/6", "image": "images/h3c.png", "crop": 0.5,
+     "headline": "Bambu’s H3C packs nine tools",
+     "summary": "Bambu Lab teased the H3C, a tool changer with a drop-down rack for nine tools. It launches Nov 3.",
+     "take": "Multicolor with way less purge waste? We’re watching the price."},
+    {"type": "story", "kicker": "Story 02", "slide": "3/6", "image": "images/lattice.png", "crop": 0.45,
+     "headline": "OrcaSlicer 2.5 alpha is huge",
+     "summary": "950+ pull requests add plugins, color mixing and a parametric CAD tab.",
+     "take": "We slice everything in Orca. Waiting for stable before customer jobs."},
+    {"type": "story", "kicker": "Story 03", "slide": "4/6", "image": "images/meshy.png", "crop": 0.3,
+     "headline": "Meshy goes from chat to slicer",
+     "summary": "A new Hermes Agent plugin generates a model, checks it, repairs it and exports a 3MF.",
+     "take": "We already do this with hi3D + Claude. Built-in print prep is the win."},
+    {"type": "quick-hits", "slide": "5/6", "handle": "@printyours.ca", "headline": "Also this week",
+     "hits": ["MIT’s InstructMesh fixes AI models", "CADlingo 2.0 turns text into CAD", "Bambu teases S1, its first 3D scanner", "Orca 2.4.2 adds Snapmaker U1 profiles"]},
+    {"type": "cta", "slide": "6/6", "headline": "Follow for weekly 3D printing news", "handle": "@printyours.ca",
+     "prompt": "Would you buy a 9-tool printer?", "footer": "Need something printed? DM us"}
+  ]
+}
