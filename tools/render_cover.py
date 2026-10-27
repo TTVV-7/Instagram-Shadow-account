@@ -3,9 +3,13 @@ import sys
 from PIL import Image, ImageDraw, ImageFont
 
 FONTS, hero_path, out_path = sys.argv[1], sys.argv[2], sys.argv[3]
-HEADLINE = sys.argv[4] if len(sys.argv) > 4 else "AI designs parts your printer can print"
-KICKER = "AI × 3D printing"
-ISSUE, DATE = "ISSUE #01", "Oct 26, 2026"
+args = sys.argv[4:] + [None] * 6
+HEADLINE = args[0] or "AI designs parts your printer can print"
+KICKER = args[1] or "AI × 3D printing"
+ISSUE = args[2] or "ISSUE #01"
+DATE = args[3] or "Oct 26, 2026"
+CROP = float(args[4] or 0.55)  # vertical crop position of the hero photo, 0 = top, 1 = bottom
+FOOTER_RIGHT = args[5] or "Swipe →"  # use the handle on single-image posts
 
 W, H, SAFE = 1080, 1350, 80
 BG, ACCENT, TEXT, MUTED, DIVIDER, ON_ACCENT = "#0B0D10", "#C6FF3D", "#F2F2EE", "#B4BAC0", "#2A2E35", "#0B0D10"
@@ -58,17 +62,17 @@ img = Image.new("RGB", (W, H), BG)
 photo = Image.open(hero_path).convert("RGB")
 scale = max(W / photo.width, hero_h / photo.height)
 photo = photo.resize((round(photo.width * scale), round(photo.height * scale)), Image.LANCZOS)
-top = min(max(0, int((photo.height - hero_h) * 0.55)), photo.height - hero_h)
+top = min(max(0, int((photo.height - hero_h) * CROP)), photo.height - hero_h)
 left = (photo.width - W) // 2
 img.paste(photo.crop((left, top, left + W, top + hero_h)), (0, 0))
 
-# Gradient overlay: 70% at top -> clear at 30% -> clear at 60% -> solid bg at bottom
+# Gradient overlay: 70% at top -> clear at 30% -> clear at 72% -> solid bg at bottom
 bg_rgb = (11, 13, 16)
 overlay = Image.new("RGBA", (W, hero_h))
 od = ImageDraw.Draw(overlay)
 for y in range(hero_h):
     p = y / hero_h
-    a = 0.7 * (1 - p / 0.3) if p < 0.3 else 0 if p < 0.6 else (p - 0.6) / 0.4
+    a = 0.7 * (1 - p / 0.3) if p < 0.3 else 0 if p < 0.72 else (p - 0.72) / 0.28
     od.line([(0, y), (W, y)], fill=bg_rgb + (round(255 * a),))
 img.paste(overlay, (0, 0), overlay)
 
@@ -96,7 +100,7 @@ y += 32
 d.rectangle([SAFE, y, W - SAFE, y + 1], fill=DIVIDER)
 y += 2 + 32
 draw_t(d, SAFE, y, DATE.upper(), label_f, MUTED, label_track)
-sw = "SWIPE →"
+sw = FOOTER_RIGHT.upper()
 draw_t(d, W - SAFE - text_w(label_f, sw, label_track), y, sw, label_f, ACCENT, label_track)
 
 img.save(out_path)
