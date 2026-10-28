@@ -1,6 +1,6 @@
 # Draft — Reel · Wed Oct 28, 2026 · 3D printing · OrcaSlicer 2.5 alpha
 Account: @printyours.ca · File: posts/2026-10-28-orca-reel/reel.mp4 (1080x1920, 44s, silent; add trending sound in app)
-Status: DRAFT (not posted) · Image: AI-generated (hi3D) → turn on the AI label
+Status: POSTED 2026-10-28 via vidIQ (AI label on, silent) → https://www.instagram.com/reel/DfDYkiGlLk4/
 
 ## Caption
 OrcaSlicer just got its biggest update ever 🎨🖨️

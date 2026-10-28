@@ -1,5 +1,5 @@
 # Draft — Reel · Meshy chat-to-slicer · Status: DRAFT (not posted)
-File: posts/2026-10-28-reel/reel.mp4 (1080x1920, 43s, 30fps, silent track; add trending sound in app)
+File: posts/2026-10-28-reel/reel.mp4 (1080x1920, 43s) · POSTED 2026-10-28 via vidIQ (AI label on, silent) → https://www.instagram.com/reel/DfDXpqsil2x/
 
 ## Caption
 AI can now fix 3D models before you print them 🤖🖨️
