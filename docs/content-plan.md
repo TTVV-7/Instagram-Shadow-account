@@ -25,7 +25,13 @@ Generate a model with an AI tool (e.g. hi3D image-to-3D → GLB), print it, and 
 Pair with a short Reel of the print. If these perform, move from 2 to 3 AI days.
 
 ## Formats
-- **Daily post:** single image, Cover layout. Kicker = `3D PRINTING` or `AI × 3D PRINTING`.
+- **Daily post:** 5-slide carousel, one image + text slides (no extra image cost):
+  1. Cover (image). Headline names WHO did WHAT (e.g. "Meshy's AI now preps your prints"), never a vague tagline.
+  2. What happened: 2 short paragraphs in full sentences. Explain any company/tool a casual maker might not know.
+  3. How it works / key details: 3–4 numbered rows, each a full phrase.
+  4. Why it matters: what it means for people who print + cost/availability + My take.
+  5. CTA: comment question + "Need something printed? DM us".
+  Kicker = `3D PRINTING` or `AI × 3D PRINTING`.
 - **Weekly recap carousel (Sun):** Cover (top story) → 3 Story slides → Quick Hits → CTA.
   Reuses that week's daily images (no new generation).
 - CTA adds: "Need something printed? DM us."

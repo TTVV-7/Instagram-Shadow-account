@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "text", "kicker": "What happened", "slide": "2/5",
+     "headline": "Meshy plugged its AI into a chat assistant",
+     "body": ["Meshy is one of the biggest AI 3D-modeling tools: you type a description or upload a picture, and it builds a 3D model.",
+              "This week it released a plugin for Hermes Agent, a free, open-source AI assistant from Nous Research. You chat with Hermes, and Hermes runs Meshy for you."]},
+    {"type": "quick-hits", "kicker": "How it works", "slide": "3/5", "handle": "@printyours.ca",
+     "headline": "Chat in, 3MF out",
+     "hits": ["You describe the part or figure in plain English", "Meshy generates a textured 3D model", "It checks for print problems and repairs them", "Scales it to real size, exports a 3MF for your slicer"]},
+    {"type": "text", "kicker": "Why it matters", "slide": "4/5",
+     "headline": "AI models usually fail as prints",
+     "body": ["Holes in the mesh, paper-thin walls and random scale make most AI models a pain to print. This plugin fixes those before you ever open your slicer.",
+              "Cost: the plugin is free. Making models needs a paid Meshy plan."],
+     "take": "Print prep is the missing piece for AI models. If the repairs hold up, this is a big deal."},
+    {"type": "cta", "slide": "5/5", "headline": "Follow for daily 3D printing news", "handle": "@printyours.ca",
+     "prompt": "Would you print an AI-generated model?", "footer": "Need something printed? DM us"}
+  ]
+}
