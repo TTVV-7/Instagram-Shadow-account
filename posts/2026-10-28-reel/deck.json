@@ -1,0 +1,79 @@
+{
+  "slides": [
+    {
+      "type": "cover"
+    },
+    {
+      "type": "text",
+      "kicker": "What happened",
+      "slide": "",
+      "headline": "Meshy plugged its AI into a chat assistant",
+      "body": [
+        "Meshy is one of the biggest AI 3D-modeling tools: you type a description or upload a picture, and it builds a 3D model.",
+        "This week it released a plugin for Hermes Agent, so you can now make 3D models just by chatting."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "Quick explainer",
+      "slide": "",
+      "headline": "Wait, what’s Hermes Agent?",
+      "body": [
+        "It’s a free, open-source AI assistant made by Nous Research. Think ChatGPT, but you can plug extra tools into it.",
+        "Meshy’s plugin is one of those tools. Once it’s installed, Hermes can make and fix 3D models for you, right in the chat."
+      ]
+    },
+    {
+      "type": "quick-hits",
+      "kicker": "How it works",
+      "slide": "",
+      "handle": "@printyours.ca",
+      "headline": "Chat in, 3MF out",
+      "hits": [
+        "You describe the part or figure in plain English",
+        "Meshy generates a textured 3D model",
+        "It checks for print problems and repairs them",
+        "Scales it to real size, exports a 3MF for your slicer"
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "Why it matters",
+      "slide": "",
+      "headline": "AI models usually fail as prints",
+      "body": [
+        "Holes in the mesh, paper-thin walls and random scale make most AI models a pain to print.",
+        "This plugin checks and repairs those problems before you ever open your slicer."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "The details",
+      "slide": "",
+      "headline": "What does it cost?",
+      "body": [
+        "The plugin is free to install. Making models uses Meshy credits, so you need a paid Meshy plan.",
+        "Hermes shows you the credit cost and waits for your OK before every job. Files save as STL, OBJ, 3MF and more."
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "Our take",
+      "slide": "",
+      "headline": "How we’d use it",
+      "body": [
+        "We already make models with hi3D and Claude, then slice in OrcaSlicer for our Bambu and Snapmaker printers."
+      ],
+      "take": "Auto-repair is the step everyone skips. If Meshy’s fix holds up on real prints, it saves hours of cleanup.",
+      "take_inline": true
+    },
+    {
+      "type": "cta",
+      "slide": "",
+      "headline": "Follow for daily 3D printing news",
+      "handle": "@printyours.ca",
+      "prompt": "Would you print an AI-generated model?",
+      "footer": "Need something printed? DM us"
+    }
+  ]
+}

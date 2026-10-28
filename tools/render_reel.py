@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 FONTS, hero_path, deck_dir, out_path, HOOK, ACCENT_WORDS = sys.argv[1:7]
 DURS = [float(x) for x in sys.argv[7:]]
@@ -101,15 +101,29 @@ def hook_frame(t):
 
 
 # ---------- Text scenes ----------
+# Blurred, darkened hero as the backdrop for text scenes
+backdrop = hero.resize((W, H), Image.LANCZOS, box=(
+    (hero.width - hero.height * W / H) / 2 if hero.width / hero.height > W / H else 0, 0,
+    (hero.width + hero.height * W / H) / 2 if hero.width / hero.height > W / H else hero.width, hero.height))
+backdrop = Image.eval(backdrop.filter(ImageFilter.GaussianBlur(40)), lambda v: int(v * 0.35))
+
+
 def framed(i, last):
+    """Crop the slide to its content, put it on a rounded card and center it in the Reel safe zone."""
     slide = Image.open(f"{deck_dir}/slide-{i}.png").convert("RGB")
     if not last:  # drop the carousel footer ("SWIPE →" makes no sense in a Reel)
         ImageDraw.Draw(slide).rectangle([0, slide.height - 80 - 60, slide.width, slide.height], fill=BG)
-    canvas = Image.new("RGB", (W, H), BG)
-    usable = H - SAFE_TOP - SAFE_BOTTOM + 160  # slide footer may sit under the caption area
-    s = min(1, usable / slide.height)
-    slide = slide.resize((round(slide.width * s), round(slide.height * s)), Image.LANCZOS)
-    canvas.paste(slide, ((W - slide.width) // 2, SAFE_TOP - 40))
+    diff = Image.eval(ImageChops.difference(slide, Image.new("RGB", slide.size, BG)).convert("L"), lambda v: 255 if v > 12 else 0)
+    x0, y0, x1, y1 = diff.getbbox()
+    pad = 64
+    card = slide.crop((max(0, x0 - pad), max(0, y0 - pad), min(slide.width, x1 + pad), min(slide.height, y1 + pad)))
+    s = min((W - 40) / card.width, (H - SAFE_TOP - SAFE_BOTTOM) / card.height)
+    card = card.resize((round(card.width * s), round(card.height * s)), Image.LANCZOS)
+    mask = Image.new("L", card.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, card.width - 1, card.height - 1], radius=44, fill=255)
+    canvas = backdrop.copy()
+    top = SAFE_TOP + ((H - SAFE_TOP - SAFE_BOTTOM) - card.height) // 2
+    canvas.paste(card, ((W - card.width) // 2, top), mask)
     return canvas
 
 

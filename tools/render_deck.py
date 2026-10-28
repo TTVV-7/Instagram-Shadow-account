@@ -197,7 +197,8 @@ def text(s):
     if s.get("take"):
         take_w = CW - 32 - 40 - 8 - 28
         take_h = 32 + STYLE["label"][2] + 10 + block_h("body-medium", s["take"], take_w) + 32
-        ty = H - SAFE - STYLE["label"][2] - 48 - take_h
+        # pinned above the footer by default; "take_inline" places it right under the body text
+        ty = y + 12 if s.get("take_inline") else H - SAFE - STYLE["label"][2] - 48 - take_h
         d.rounded_rectangle([SAFE, ty, W - SAFE, ty + take_h], radius=32, fill=SURFACE)
         d.rounded_rectangle([SAFE + 32, ty + 32, SAFE + 40, ty + take_h - 32], radius=4, fill=ACCENT)
         tx = SAFE + 32 + 8 + 28
