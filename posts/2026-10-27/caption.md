@@ -1,5 +1,5 @@
 # Draft — Tue Oct 27, 2026 · AI × 3D printing
-Account: @printyours.ca · Format: 4-slide carousel (image cover + 3 text slides) · Status: DRAFT (not posted)
+Account: @printyours.ca · Format: 4-slide carousel (image cover + 3 text slides) · Status: POSTED 2026-10-28 → https://www.instagram.com/p/DfBTdNDFxxB/
 Image: AI-generated (hi3D, Nano-Banana 2) → turn on Instagram's "AI info" label
 
 ## Caption
