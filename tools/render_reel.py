@@ -6,6 +6,7 @@ The remaining scenes are the carousel's text slides, framed inside the Reel safe
 Usage: python3 tools/render_reel.py <fonts-dir> <hero.png> <deck-dir> <out.mp4> "<hook>" "<accent words>" <slide-durations...>
   slide-durations: seconds per carousel slide from slide-2 onward, e.g. 6 5 6 3
 """
+import os
 import subprocess
 import sys
 
@@ -15,6 +16,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 FONTS, hero_path, deck_dir, out_path, HOOK, ACCENT_WORDS = sys.argv[1:7]
 DURS = [float(x) for x in sys.argv[7:]]
 HOOK_DUR, XFADE, FPS = 3.0, 0.35, 30
+TEXT_TOP = os.environ.get("REEL_TEXT_POS") == "top"  # put the hook headline at the top when the subject sits low
 W, H = 1080, 1920
 BG, ACCENT, TEXT, ON_ACCENT = (11, 13, 16), "#C6FF3D", "#F2F2EE", "#0B0D10"
 # Instagram covers roughly the top 220px (header) and bottom 420px (caption, buttons) of a Reel
@@ -52,7 +54,10 @@ overlay = Image.new("RGBA", (W, H))
 od = ImageDraw.Draw(overlay)
 for y in range(H):
     p = y / H
-    a = 0.75 * (1 - p / 0.35) if p < 0.35 else 0 if p < 0.5 else min(1, (p - 0.5) / 0.3) * 0.92
+    if TEXT_TOP:  # strong fade behind the headline at the top, light fade under the caption area
+        a = 0.85 * (1 - p / 0.42) if p < 0.42 else 0 if p < 0.75 else (p - 0.75) / 0.25 * 0.7
+    else:
+        a = 0.75 * (1 - p / 0.35) if p < 0.35 else 0 if p < 0.5 else min(1, (p - 0.5) / 0.3) * 0.92
     od.line([(0, y), (W, y)], fill=BG + (round(255 * a),))
 
 # Headline text block (wrapped, accent words in lime), placed in the lower-middle safe area
@@ -70,9 +75,9 @@ accent = set(ACCENT_WORDS.split())
 lh = 112
 text_layer = Image.new("RGBA", (W, H))
 td = ImageDraw.Draw(text_layer)
-y0 = H - SAFE_BOTTOM - 40 - lh * len(lines)
+y0 = SAFE_TOP + 190 if TEXT_TOP else H - SAFE_BOTTOM - 40 - lh * len(lines)
 # kicker pill above the headline
-kick = "AI × 3D PRINTING"
+kick = os.environ.get("REEL_KICKER", "AI × 3D printing").upper()
 kw = tw(JM, kick, 1.5) + 48
 td.rounded_rectangle([80, y0 - 100, 80 + kw, y0 - 40], radius=30, fill=ACCENT)
 draw_t(td, 104, y0 - 92, kick, JM, ON_ACCENT, 1.5)
@@ -84,6 +89,16 @@ for i, ln in enumerate(lines):
 # wordmark at the top
 x = draw_t(td, 80, SAFE_TOP - 20, "a day in ", WM, TEXT, -1)
 draw_t(td, x, SAFE_TOP - 20, "3D", WM, ACCENT, -1)
+
+# Soft dark glow behind the hook text so it stays readable over busy photos
+_alpha = text_layer.getchannel("A")
+_glow = Image.new("RGBA", (W, H), BG + (0,))
+_glow.putalpha(_alpha.filter(ImageFilter.GaussianBlur(22)).point(lambda v: min(255, v * 2)))
+_shadowed = Image.new("RGBA", (W, H))
+_shadowed.alpha_composite(_glow)
+_shadowed.alpha_composite(_glow)
+_shadowed.alpha_composite(text_layer)
+text_layer = _shadowed
 
 
 def hook_frame(t):

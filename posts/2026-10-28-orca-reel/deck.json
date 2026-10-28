@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "text", "kicker": "What happened", "slide": "",
+     "headline": "OrcaSlicer just dropped its biggest update",
+     "body": ["OrcaSlicer is the free, open-source slicer a lot of Bambu, Snapmaker and Creality owners use instead of the stock one.",
+              "On Oct 16 it released the 2.5 alpha: more than 950 pull requests from over 140 contributors."]},
+    {"type": "quick-hits", "kicker": "The big features", "slide": "", "handle": "@printyours.ca",
+     "headline": "What’s new",
+     "hits": ["Color mixing: blend 2–3 filaments into new colors", "Design tab: basic parametric CAD in the slicer", "Python plugins to add your own features", "Texture Displacement: real surface texture from images"]},
+    {"type": "text", "kicker": "Bambu owners", "slide": "",
+     "headline": "Good news for Bambu printers",
+     "body": ["Full support for the H2C and A2L, including multicolor printing on the H2C.",
+              "On the H2D and X2D you can run different nozzle sizes on the left and right, and pick Standard or High Flow for each nozzle."]},
+    {"type": "text", "kicker": "Also in 2.5", "slide": "",
+     "headline": "Belt printers and IDEX too",
+     "body": ["Belt printers are now supported, so parts can be longer than the machine itself.",
+              "Printers with independent dual heads (IDEX) can print two to four copies at the same time."]},
+    {"type": "text", "kicker": "Before you update", "slide": "",
+     "headline": "It’s an alpha. Be careful.",
+     "body": ["Expect bugs, and back up your projects and profiles first.",
+              "Want the CAD tab? Go to Preferences → General → Features, tick “CAD feature”, then restart."]},
+    {"type": "text", "kicker": "Our take", "slide": "",
+     "headline": "How we’ll use it",
+     "body": ["We slice everything in OrcaSlicer and Snapmaker Orca for our Bambu and Snapmaker printers."],
+     "take": "Color mixing is the one we can’t wait to try. Customer jobs stay on the stable version until 2.5 is out of alpha.",
+     "take_inline": true},
+    {"type": "cta", "slide": "", "headline": "Follow for daily 3D printing news", "handle": "@printyours.ca",
+     "prompt": "Which feature would you try first?", "footer": "Need something printed? DM us"}
+  ]
+}
