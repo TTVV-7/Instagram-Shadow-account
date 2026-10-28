@@ -25,6 +25,15 @@ Generate a model with an AI tool (e.g. hi3D image-to-3D → GLB), print it, and 
 Pair with a short Reel of the print. If these perform, move from 2 to 3 AI days.
 
 ## Formats
+**Current priority (low follower count): a Reel every day + the weekly recap carousel on Sunday.**
+Reels reach non-followers; carousels mostly reach existing followers. Daily carousels come back once
+the account has a few hundred followers.
+
+- **Daily Reel (main format):** ~40–45s, 1080×1920, made with `tools/render_reel.py`.
+  Hook scene (story image + headline naming who did what, visible from frame 1) → What happened →
+  Quick explainer of any tool/company → How it works → Why it matters → Cost/details → Our take
+  (hi3D + Claude → OrcaSlicer → Bambu / Snapmaker) → CTA. 6–7s per text scene.
+  Rendered silent: add a trending sound (↗) in the Instagram app when posting, turn on the AI label.
 - **Daily post:** 5-slide carousel, one image + text slides (no extra image cost):
   1. Cover (image). Headline names WHO did WHAT (e.g. "Meshy's AI now preps your prints"), never a vague tagline.
   2. What happened: 2 short paragraphs in full sentences. Explain any company/tool a casual maker might not know.
