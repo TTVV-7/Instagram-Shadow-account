@@ -63,6 +63,9 @@ the account has a few hundred followers.
   for generated images.
 
 ## Posting
-- Every post is approved before publishing (slides + caption + account).
+- Daily Reels post automatically (approved by the account owner, Nov 10): a daily scheduled task at
+  7:40pm Vancouver time renders the Reel and posts it via vidIQ with the AI label on. If posting fails,
+  the Reel is left as a DRAFT with the reason in its caption.md.
+- Other posts (weekly carousel, one-offs) are still approved before publishing.
 - Routes: Zapier (Instagram for Business) → fallback Meta Business Suite upload/schedule.
 - Reels via vidIQ: turn the weekly carousel into a swipe-style Reel for reach.
