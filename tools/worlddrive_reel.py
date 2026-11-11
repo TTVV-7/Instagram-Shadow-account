@@ -80,7 +80,7 @@ def place_layer():
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 
     def paint(dd, shadow):
-        y = H - SAFE_BOTTOM - 150
+        y = SAFE_TOP + 40  # above the vehicle, which sits in the lower middle of the chase view
         dd.rounded_rectangle((70, y, 70 + 14, y + 110), 7, fill=shadow or ACCENT)
         dd.text((104, y - 6), PLACE, font=PLACE_F, fill=shadow or TEXT)
         dd.text((106, y + 70), DETAIL, font=DETAIL_F, fill=shadow or (230, 230, 230))

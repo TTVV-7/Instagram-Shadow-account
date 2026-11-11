@@ -15,7 +15,7 @@ The globe → drop in → drive → end card, ~25–30 s:
 
 1. **Hook** (first ~3 s, over the drop-in): "WORLD DRIVE" kicker + a headline naming the place, e.g.
    "We drove where Apollo 11 landed." / "We dropped onto the Golden Gate Bridge."
-2. **Drive** (~18 s): boost, weave, hop; the place name and a one-line detail in the lower corner.
+2. **Drive** (~18 s): boost, weave, hop; the place name and a one-line detail at the top, clear of the vehicle.
 3. **End card**: "Pick anywhere on Earth — or the Moon. Drop in. Drive." + **worlddrive.app** +
    "Free in your browser · no download".
 4. Original music (`tools/make_music.py`, a new seed each time), -14 LUFS.
@@ -59,3 +59,4 @@ Never repeat a place; log each one below. Ideas by series:
 
 | Date | World | Place | Link |
 |---|---|---|---|
+| 2026-11-11 | Moon | Tranquility Base (moon-apollo-11) | (posting tonight) |
