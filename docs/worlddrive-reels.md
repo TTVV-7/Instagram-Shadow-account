@@ -43,6 +43,9 @@ node tools/capture_drive.js <capture-dir> <place> 18 1
 python3 tools/worlddrive_reel.py <fonts-dir> <capture-dir> posts/<date>-worlddrive-<slug>/reel.mp4 "<hook>" "<place>" "<detail>" <seed>
 ```
 
+Posting: Instagram rejects a raw GitHub URL. Push the reel, import its raw URL with vidIQ's
+`vidiq_video_upload`, then publish the returned vidIQ `videoUrl` with `vidiq_instagram_publish_reel`.
+
 Fonts: Space Grotesk + JetBrains Mono from github.com/google/fonts (`ofl/spacegrotesk`, `ofl/jetbrainsmono`).
 Check stills from the hook, the drive and the end card before posting.
 
@@ -59,4 +62,4 @@ Never repeat a place; log each one below. Ideas by series:
 
 | Date | World | Place | Link |
 |---|---|---|---|
-| 2026-11-11 | Moon | Tranquility Base (moon-apollo-11) | (posting tonight) |
+| 2026-11-11 | Moon | Tranquility Base (moon-apollo-11) | https://www.instagram.com/reel/DfoG7NEq5WS/ |

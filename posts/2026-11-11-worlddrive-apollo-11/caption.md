@@ -1,7 +1,7 @@
 # Reel · Wed Nov 11, 2026 · World Drive · the Moon: Tranquility Base (Apollo 11)
 Account: @printyours.ca · Format: Reel (1080x1920, 26s, original music, real gameplay; no AI label needed)
 File: posts/2026-11-11-worlddrive-apollo-11/reel.mp4 · Place: moon-apollo-11 · Map credit on screen: Moon: NASA LRO (LROC, LOLA)
-Status: DRAFT — ready; tonight's scheduled run posts it
+Status: POSTED 2026-11-11 via vidIQ (real gameplay, no AI label) → https://www.instagram.com/reel/DfoG7NEq5WS/
 
 ## Caption
 We drove where Apollo 11 landed. 🌕🛻
