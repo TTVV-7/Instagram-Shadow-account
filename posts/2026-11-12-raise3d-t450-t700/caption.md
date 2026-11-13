@@ -1,7 +1,7 @@
 # Reel · Thu Nov 12, 2026 · 3D printing news · Raise3D T450 and T700
 Account: @printyours.ca · File: posts/2026-11-12-raise3d-t450-t700/reel.mp4 (1080x1920, 44.5s, original music, -14 LUFS)
 Image: Raise3D press photo (PR Newswire release), not AI-generated → no AI label
-Status: PENDING
+Status: POSTED 2026-11-12 via vidIQ (press photo, no AI label) → https://www.instagram.com/reel/DfqlhStK9VQ/
 
 ## Caption
 Raise3D's new printer is a metre tall 📏🖨️
