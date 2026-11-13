@@ -1,0 +1,31 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "text", "kicker": "What happened", "slide": "",
+     "headline": "Raise3D launched two giant printers",
+     "body": ["Raise3D makes professional 3D printers and the free ideaMaker slicer.",
+              "On Nov 11 it announced the T450 and T700: big printers with a heated chamber, which it calls the most affordable of their kind."]},
+    {"type": "quick-hits", "kicker": "The two sizes", "slide": "", "handle": "@printyours.ca",
+     "headline": "How big?",
+     "hits": ["T450: 450 × 350 × 400 mm, chamber up to 70°C", "T700: 700 × 500 × 1,000 mm, a metre tall", "Hot end up to 420°C, bed up to 120°C", "Fibre-ready: PET CF, PPA CF and PPS CF"]},
+    {"type": "text", "kicker": "How it works", "slide": "",
+     "headline": "Two filaments, one nozzle",
+     "body": ["TwinFlow feeds two filament paths into one nozzle: up to 600 mm/s in Raise3D’s own tests, or two materials for dissolvable supports.",
+              "The heated chamber keeps big ABS and nylon parts from warping, and vents open for PLA."]},
+    {"type": "text", "kicker": "Why it matters", "slide": "",
+     "headline": "Big parts in one piece",
+     "body": ["Large jigs, moulds and prototypes can print whole instead of being split and glued.",
+              "Raise3D’s example: a scoliosis brace, which has to be one piece to be strong enough."]},
+    {"type": "text", "kicker": "Price & dates", "slide": "",
+     "headline": "From $4,999",
+     "body": ["T450: US$4,999, shipping by the end of December.",
+              "T700: US$15,999, expected by the end of January. Both are on show at Formnext in Frankfurt, Nov 17–20."]},
+    {"type": "text", "kicker": "Our take", "slide": "",
+     "headline": "Not a home printer",
+     "body": ["At $4,999 this is a business machine, not a hobby upgrade."],
+     "take": "Most of our jobs fit on our Bambu and Snapmaker beds. For a part bigger than that, a printer like this beats cutting it up.",
+     "take_inline": true},
+    {"type": "cta", "slide": "", "headline": "Follow for daily 3D printing news", "handle": "@printyours.ca",
+     "prompt": "What would you print a metre tall?", "footer": "Need something printed? DM us"}
+  ]
+}
