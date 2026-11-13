@@ -24,6 +24,16 @@ Generate a model with an AI tool (e.g. hi3D image-to-3D → GLB), print it, and 
 "Worth it?" slide: AI image + photo of the print + verdict (is it actually printable?).
 Pair with a short Reel of the print. If these perform, move from 2 to 3 AI days.
 
+## Performance notes (Nov 13, from Instagram insights)
+
+- Best: the owner's own clips: World Drive gameplay with voiceover (1,400–1,800 views) and real prints,
+  8–17 s (1,400+ views, 60% watched). Automated 44 s text-slide news Reels: ~130 views, 5–9% watched,
+  ~80% swipe away in the first seconds.
+- So: shorter (≤15–20 s), motion in the first second, a voiceover, real footage/photos over text slides.
+  World Drive Reels use the stunt montage (docs/worlddrive-reels.md).
+- News Reels: at most hook + 2 text slides + CTA (~15 s), with a voiceover reading the hook and the one
+  key fact (vidIQ voiceover, same voice). Real product photo/video when there is one.
+
 ## Formats
 **Current priority (low follower count): a Reel every day + the weekly recap carousel on Sunday.**
 Reels reach non-followers; carousels mostly reach existing followers. Daily carousels come back once

@@ -1,0 +1,10 @@
+{
+  "cuts": [
+    {"clip": 1, "start": 0.8, "seconds": 4.2, "caption": "THE REAL WORLD."},
+    {"clip": 0, "start": 1.0, "seconds": 4.0, "caption": "FLOOR IT."},
+    {"clip": 2, "start": 0.7, "seconds": 4.3, "caption": "OOPS."}
+  ],
+  "voiceover": "posts/2026-11-14-worlddrive-earth-montage/voiceover.mp3",
+  "music_seed": 21,
+  "end_seconds": 3.0
+}

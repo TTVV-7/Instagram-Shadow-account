@@ -1,0 +1,33 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "golden-gate",
+			"place": "Golden Gate Bridge",
+			"frames": 150,
+			"credit": "Google; Vexcel Imaging US, Inc.; Data SIO, NOAA, U.S. Navy, NGA, GEBCO; Data MBARI; Data CSUMB SFML, CA OPC; Data LDEO-Columbia, NSF, NOAA; Landsat / Copernicus"
+		},
+		{
+			"spot": "manhattan",
+			"place": "Times Square",
+			"frames": 150,
+			"credit": "Google; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "monaco",
+			"place": "Monaco harbour",
+			"frames": 150,
+			"credit": "Google; Data SIO, NOAA, U.S. Navy, NGA, GEBCO"
+		},
+		{
+			"spot": "grand-canyon",
+			"place": "Grand Canyon rim road",
+			"frames": 150,
+			"credit": "Google; Airbus; Landsat / Copernicus"
+		}
+	]
+}
