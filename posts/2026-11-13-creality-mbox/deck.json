@@ -1,0 +1,15 @@
+{
+  "slides": [
+    {"type": "cover"},
+    {"type": "text", "kicker": "The AI part", "slide": "",
+     "headline": "A photo in, a toy out",
+     "body": ["With Creality’s CubeMe and SnapForm apps, kids turn a photo of the family dog, or their own drawing, into a model they can print.",
+              "No 3D modelling needed. An AI camera also watches each print."]},
+    {"type": "text", "kicker": "Made for kids", "slide": "",
+     "headline": "Five layers of protection",
+     "body": ["A fully enclosed chamber, a door-open alert, a bed that doesn’t heat up, a carbon filter and low-odour PLA.",
+              "It prints up to 153 mm cubed, started from its own touchscreen."]},
+    {"type": "cta", "slide": "", "headline": "Follow for daily 3D printing news", "handle": "@printyours.ca",
+     "prompt": "Would you let your kid run one?", "footer": "Need something printed? DM us"}
+  ]
+}
