@@ -1,7 +1,7 @@
 # Reel · Fri Nov 13, 2026 · AI × 3D printing · Creality mBox
 Account: @printyours.ca · File: posts/2026-11-13-creality-mbox/reel.mp4 (1080x1920, 18.2s, AI voiceover "Roger" via vidIQ + original music, -14 LUFS)
 Image: Creality product photo (creality.com/products/mbox), not AI-generated → no AI label
-Status: PENDING
+Status: POSTED 2026-11-13 via vidIQ (product photo, no AI label) → https://www.instagram.com/reel/DftK1MpCO0I/
 
 ## Caption
 Creality just made an AI 3D printer for kids 🦖🖨️
