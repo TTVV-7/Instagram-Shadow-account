@@ -75,4 +75,4 @@ Never repeat a place; log each one below. Ideas by series:
 | Date | World | Place | Link |
 |---|---|---|---|
 | 2026-11-11 | Moon | Tranquility Base (moon-apollo-11) | https://www.instagram.com/reel/DfoG7NEq5WS/ |
-| 2026-11-14 | Earth | Times Square, Golden Gate Bridge, Monaco harbour (montage) | (Saturday) |
+| 2026-11-14 | Earth | Times Square, Golden Gate Bridge, Monaco harbour (montage) | https://www.instagram.com/reel/Dfvu6cbu3WM/ |

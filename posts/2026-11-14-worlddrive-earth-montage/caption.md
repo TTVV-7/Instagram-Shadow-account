@@ -1,7 +1,7 @@
 # Reel · Sat Nov 14, 2026 · World Drive · Earth montage (Times Square, Golden Gate, Monaco)
 Account: @printyours.ca · Format: Reel (1080x1920, 15.5s, AI voiceover "Roger" via vidIQ + original music; real gameplay, no AI label)
 File: posts/2026-11-14-worlddrive-earth-montage/reel.mp4 · Map credit on screen (Google + data providers)
-Status: DRAFT — ready; Saturday's scheduled run posts it
+Status: POSTED 2026-11-14 via vidIQ (real gameplay, AI voiceover, no AI label) → https://www.instagram.com/reel/Dfvu6cbu3WM/
 
 ## Caption
 I made a game where you can drive anywhere on Earth 🌍🛻
