@@ -31,8 +31,31 @@ Pair with a short Reel of the print. If these perform, move from 2 to 3 AI days.
   ~80% swipe away in the first seconds.
 - So: shorter (≤15–20 s), motion in the first second, a voiceover, real footage/photos over text slides.
   World Drive Reels use the stunt montage (docs/worlddrive-reels.md).
-- News Reels: at most hook + 2 text slides + CTA (~15 s), with a voiceover reading the hook and the one
-  key fact (vidIQ voiceover, same voice). Real product photo/video when there is one.
+- Nov 15: the World Drive stunt montage hit 1,603 views, 91% watched, 21% skip. The 18 s mBox news
+  Reel: 133 views, 21% watched, 70% skip — shorter fixed watch time, but the hook still loses people.
+
+## News Reel hooks (since Nov 15) — tools/news_reel.py
+
+What top 3D-printing Reels (100K–1.7M views, Aug–Nov 2026) do in the first 2 s, and what ours lacked:
+- **Talk to the viewer, not about the company.** "This is why your curved prints look cheap",
+  "Stop putting your fingers on your build plate", "3 wrong slicer settings you should always change".
+  Ours were "Creality made…", "Raise3D's new printer…": a headline, not a reason to stay.
+- **The payoff on screen in frame 1**: the printed thing, the kid with the printer, the giant machine —
+  full screen, moving. Not a still photo with a logo and a label pill (reads as an ad).
+- **The voice says the hook immediately**, and big word-by-word captions follow it (most people watch muted).
+
+Hook formulas (≤ 8 words, on screen AND the first sentence of the voiceover, no brand name first):
+1. You/your + concrete outcome: "Your kid can now 3D print the family dog."
+2. Stop / don't: "Stop buying a bigger printer. Read this first."
+3. Surprising number or size, made personal: "This printer is taller than you." / "$349 for four colours."
+4. Question that names the viewer's pain: "Tired of babysitting your prints?"
+5. "This is why…" / "Nobody tells you…" for a how-it-works angle.
+Then: what it is (one line, brand here), one key fact, a comment question. ~35–45 words, ~15–18 s.
+
+Build: tools/news_reel.py with 3–6 real images (press/product photos; lifestyle shot with people or the
+printed object first, `"fill": true` + focus for photos, plain path for product cutouts), cuts every 2 s,
+voiceover from vidIQ (Roger), captions synced to it, 2 s CTA end card. hi3D images only when the story
+has no real visuals (then the AI label is ON). The old slide format (render_reel.py) is retired for news.
 
 ## Formats
 **Current priority (low follower count): a Reel every day + the weekly recap carousel on Sunday.**
