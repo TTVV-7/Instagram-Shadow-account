@@ -58,6 +58,10 @@ voiceover from vidIQ (Roger), captions synced to it, 2 s CTA end card. hi3D imag
 has no real visuals (then the AI label is ON). The old slide format (render_reel.py) is retired for news.
 
 ### Voiceover providers (owner approved both, Nov 15)
+0. Google Cloud Text-to-Speech (owner approved, Nov 16): `python3 tools/google_tts.py <out.mp3> "<script>"`,
+   voice en-US-Chirp3-HD-Charon, rate 1.08, on the `google_api` key. Likely free (free tier ~1M chars/month).
+   Needs the Cloud Text-to-Speech API enabled on Google Cloud project 979605278581; until then it errors
+   with PERMISSION_DENIED, so fall through to the next provider.
 1. vidIQ `vidiq_voiceover_generate`, voice "Roger" (CwhRBWXzGAHq8TQ4Fs17): 28 credits per voiceover.
 2. Fallback when vidIQ is out of credits: Higgsfield `generate_audio`. Check `get_cost: true` first.
    seed_audio, preset voice "Grady" (e2a2d2e6-9ed2-59cd-82af-feaa27f8a678): 2.1 credits;
