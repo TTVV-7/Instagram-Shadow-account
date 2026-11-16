@@ -57,6 +57,15 @@ printed object first, `"fill": true` + focus for photos, plain path for product 
 voiceover from vidIQ (Roger), captions synced to it, 2 s CTA end card. hi3D images only when the story
 has no real visuals (then the AI label is ON). The old slide format (render_reel.py) is retired for news.
 
+### Voiceover providers (owner approved both, Nov 15)
+1. vidIQ `vidiq_voiceover_generate`, voice "Roger" (CwhRBWXzGAHq8TQ4Fs17): 28 credits per voiceover.
+2. Fallback when vidIQ is out of credits: Higgsfield `generate_audio`. Check `get_cost: true` first.
+   seed_audio, preset voice "Grady" (e2a2d2e6-9ed2-59cd-82af-feaa27f8a678): 2.1 credits;
+   text2speech_v2 variant cozy_voice, same voice: 0.35 credits (cheapest). Use seed_audio when
+   the balance allows, else cozy_voice. Keep one voice per series where possible.
+3. If neither has credits: don't post a silent news Reel — keep it as a DRAFT with the reason and tell
+   the owner (they can send a voice memo of the script instead).
+
 ## Formats
 **Current priority (low follower count): a Reel every day + the weekly recap carousel on Sunday.**
 Reels reach non-followers; carousels mostly reach existing followers. Daily carousels come back once
