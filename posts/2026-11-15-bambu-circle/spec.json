@@ -1,0 +1,11 @@
+{
+  "hook": "Your 3D printer could be a side business",
+  "voiceover": "posts/2026-11-15-bambu-circle/voiceover.mp3",
+  "script": "Your 3D printer could be a side business. Bambu Lab just announced Bambu Circle: certified local shops that print, repair, and teach. It starts in the Netherlands, then Germany and France next year. Bambu says fifty-eight percent of its Dutch users want to earn money printing. Should it come to Canada?",
+  "images": [{"path": "posts/2026-11-15-bambu-circle/images/shop.png", "fill": true, "focus": [0.5, 0.45]},
+             {"path": "posts/2026-11-15-bambu-circle/images/repair.png", "fill": true, "focus": [0.5, 0.45]},
+             {"path": "posts/2026-11-15-bambu-circle/images/class.png", "fill": true, "focus": [0.5, 0.45]}],
+  "cta": "Should Bambu Circle come to Canada?",
+  "credit": "Images: AI-generated",
+  "music_seed": 44
+}
