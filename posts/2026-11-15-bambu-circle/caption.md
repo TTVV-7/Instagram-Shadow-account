@@ -1,7 +1,7 @@
 # Reel · Sun Nov 15, 2026 · 3D printing news · Bambu Circle
 Account: @printyours.ca · Format: tools/news_reel.py (viewer-first hook, full-screen images, synced captions, voiceover)
 Images: AI-generated with hi3D (Bambu's own promo image is also AI-generated, per All3DP) → Instagram AI label ON
-Status: DRAFT — not posted: no voiceover. vidIQ is out of credits (13 left, a voiceover costs 28) and Higgsfield has 0.24 credits; installing a free local voice model was blocked by the permission check. Needs: vidIQ credits, the owner's own narration (script below), or OK to post without a voice.
+Status: DRAFT — built with the free local Kokoro voice ("Michael"); waiting for the owner to OK the voice before posting
 
 ## Voiceover script (≈18 s)
 Your 3D printer could be a side business. Bambu Lab just announced Bambu Circle: certified local shops that print, repair, and teach. It starts in the Netherlands, then Germany and France next year. Bambu says fifty-eight percent of its Dutch users want to earn money printing. Should it come to Canada?
