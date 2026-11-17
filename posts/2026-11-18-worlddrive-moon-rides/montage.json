@@ -1,0 +1,30 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "moon-tycho",
+			"ride": "monster-truck",
+			"place": "Tycho crater",
+			"frames": 120,
+			"credit": "Moon: NASA LRO (LROC, LOLA)"
+		},
+		{
+			"spot": "moon-huygens",
+			"ride": "ice-cream-van",
+			"place": "Mons Huygens",
+			"frames": 120,
+			"credit": "Moon: NASA LRO (LROC, LOLA)"
+		},
+		{
+			"spot": "moon-apollo-15",
+			"ride": "formula-racer",
+			"place": "Hadley Rille",
+			"frames": 120,
+			"credit": "Moon: NASA LRO (LROC, LOLA)"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+  "cuts": [
+    {
+      "clip": 0,
+      "start": 0.3,
+      "seconds": 3.7,
+      "caption": "MOON GRAVITY."
+    },
+    {
+      "clip": 1,
+      "start": 0.2,
+      "seconds": 3.8,
+      "caption": "ICE-CREAM VAN."
+    },
+    {
+      "clip": 2,
+      "start": 0.2,
+      "seconds": 3.8,
+      "caption": "NO BRAKES."
+    }
+  ],
+  "voiceover": "posts/2026-11-18-worlddrive-moon-rides/voiceover.mp3",
+  "music_seed": 52,
+  "end_seconds": 3.0,
+  "tagline": "Drive the Moon."
+}

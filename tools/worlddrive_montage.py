@@ -8,7 +8,8 @@ spec.json:
     "voiceover": "path/to/voice.mp3",        optional; mixed over the music
     "music_seed": 7,                          tools/make_music.py seed
     "trim_start": 0.3, "clip_seconds": 4.2,   seconds kept from each clip
-    "end_seconds": 2.5
+    "end_seconds": 2.5,
+    "tagline": "Drive the Moon."                end card line under WORLD DRIVE (optional)
   }
 Hard cuts every few seconds, a quick punch-in at each cut, the place name small above the caption,
 the game's own stunt call-outs and map credit (already in the frames), then a short end card.
@@ -80,7 +81,7 @@ def end_card(last):
     y = H // 2 - 260
     d.text((W // 2, y), "WORLD DRIVE", font=font(SG, 128, 700), fill=ACCENT, anchor="mm")
     y += 120
-    d.text((W // 2, y), "Drive anywhere on Earth.", font=font(SG, 60, 600), fill=TEXT, anchor="mm")
+    d.text((W // 2, y), spec.get("tagline", "Drive anywhere on Earth — or the Moon."), font=font(SG, 56, 600), fill=TEXT, anchor="mm")
     y += 130
     pill_f = font(SG, 60, 700)
     label = "worlddrive.app"
