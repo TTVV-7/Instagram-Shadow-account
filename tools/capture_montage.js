@@ -8,8 +8,12 @@
 //   npx vite --config vite.drive.config.js --port 5199 --strictPort            (Earth: uses google_api)
 //   env -u google_api npx vite --config vite.drive.config.js --port 5199 ...   (Moon only)
 //
-// Usage: node tools/capture_montage.js <outDir> <spot>[,<spot>...] [secondsPerPlace] [seed]
+// Usage: node tools/capture_montage.js <outDir> <spot>[@ride][,<spot>[@ride]...] [secondsPerPlace] [seed]
 //   spots: World Drive spot ids, e.g. furka,sydney,lions-gate,arc  or  moon-huygens,moon-tycho
+//   @ride: drive that ride there, e.g. moon-tycho@monster-truck, sydney@hovercraft (ids in World Drive's
+//   src/drive-app/catalog.js and vehicles.js). Showcase mode: the page is opened with World Drive's own
+//   local test switches ?pro=1 (Supporter Pass: every Pass and level ride and look) and ?feats=all
+//   (every achievement: the construction rides), which only work on localhost, never on worlddrive.app.
 // Writes <outDir>/clip-<n>/%05d.jpg (30 fps, 540x960) and <outDir>/montage.json.
 
 const { chromium } = require( 'playwright' );
@@ -25,7 +29,15 @@ if ( ! outDir || ! spotsArg ) {
 }
 
 const FPS = 30;
-const SPOTS = spotsArg.split( ',' );
+const PLAN = spotsArg.split( ',' ).map( entry => {
+
+	const [ spot, ride = null ] = entry.split( '@' );
+	return { spot, ride };
+
+} );
+const SPOTS = PLAN.map( p => p.spot );
+const SHOWCASE = 'pro=1&feats=all';
+const url = spot => `${ BASE }?${ SHOWCASE }&spot=${ encodeURIComponent( spot ) }`;
 const SECONDS = Number( secondsArg );
 const BASE = process.env.WORLD_DRIVE_URL || 'http://localhost:5199/';
 // Spot id → the name on its globe-panel button, from World Drive's own place lists.
@@ -85,15 +97,37 @@ async function releaseAll( page ) {
 	fs.mkdirSync( outDir, { recursive: true } );
 	const browser = await chromium.launch( { args: [ '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist' ] } );
 	const page = await browser.newPage( { viewport: { width: 540, height: 960 } } );
+	// The ride is World Drive's saved pick (panel.js's 'world-drive.vehicle'), read as the page starts.
+	let ride = PLAN[ 0 ].ride;
+	await page.addInitScript( () => {
+
+		const r = window.name.startsWith( 'ride:' ) ? window.name.slice( 5 ) : '';
+		if ( r ) try { localStorage.setItem( 'world-drive.vehicle', r ); } catch {}
+
+	} );
+	const open = async ( spot, r ) => {
+
+		await page.evaluate( v => { window.name = v ? `ride:${ v }` : ''; }, r ).catch( () => {} );
+		await page.goto( url( spot ), { waitUntil: 'load', timeout: 90000 } );
+		await page.addStyleTag( { content: CSS } );
+
+	};
 	const t0 = Date.now();
-	await page.goto( `${ BASE }?spot=${ encodeURIComponent( SPOTS[ 0 ] ) }`, { waitUntil: 'load', timeout: 90000 } );
-	await page.addStyleTag( { content: CSS } );
+	await page.goto( 'about:blank' );
+	await open( SPOTS[ 0 ], ride );
 	const clips = [];
 
 	for ( let i = 0; i < SPOTS.length; i ++ ) {
 
 		const spot = SPOTS[ i ];
-		if ( i > 0 ) {
+		if ( i > 0 && PLAN[ i ].ride !== ride ) {
+
+			// A different ride: a fresh page load picks it up (on Earth, one more Maps session).
+			await releaseAll( page );
+			ride = PLAN[ i ].ride;
+			await open( spot, ride );
+
+		} else if ( i > 0 ) {
 
 			// Back to the globe, then the spot's button on the panel (same page, same Maps session).
 			await releaseAll( page );
@@ -103,7 +137,7 @@ async function releaseAll( page ) {
 			const name = NAMES[ spot ] ?? null;
 			const button = name ? page.getByRole( 'button', { name, exact: true } ) : null;
 			if ( button && await button.count() ) await button.first().click();
-			else await page.goto( `${ BASE }?spot=${ encodeURIComponent( spot ) }`, { waitUntil: 'load', timeout: 90000 } ).then( () => page.addStyleTag( { content: CSS } ) );
+			else await open( spot, ride );
 
 		}
 
@@ -137,7 +171,7 @@ async function releaseAll( page ) {
 		}
 
 		const credit = await page.evaluate( () => window.worldDriveCapture.credit() );
-		clips.push( { spot, place, frames, credit } );
+		clips.push( { spot, ride: PLAN[ i ].ride, place, frames, credit } );
 		console.log( `${ spot } (${ place }): ${ frames } frames, ${ Math.round( ( Date.now() - t0 ) / 1000 ) } s` );
 
 	}

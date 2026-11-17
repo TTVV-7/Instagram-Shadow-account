@@ -61,6 +61,34 @@ Posting: Instagram rejects a raw GitHub URL. Push the reel, import its raw URL w
 Fonts: Space Grotesk + JetBrains Mono (+ Inter for news slides) from github.com/google/fonts (`ofl/spacegrotesk`, `ofl/jetbrainsmono`).
 Check stills from the hook, the drive and the end card before posting.
 
+
+## Showcase mode and "What's new" (owner's request, Nov 17)
+
+The owner updates World Drive all the time and wants the Reels to show off what's new: new cars, new
+modes, the Moon (which is becoming the free, main world) and more planets as they're added from NASA
+data. Earth driving is becoming the older part of the game: use it only when something new happens
+there, or for a "you pick, I drive" from comments.
+
+- **Showcase mode ("admin account")**: tools/capture_montage.js opens World Drive with its own local test
+  switches `?pro=1` (Supporter Pass: every Pass and level ride and look) and `?feats=all` (every
+  achievement: the construction rides). They work only on localhost, never on worlddrive.app. Pick the
+  ride per clip with `spot@ride`, e.g. `moon-tycho@monster-truck,moon-huygens@ice-cream-van`.
+  Ride ids: src/drive-app/catalog.js (DRIVE_CARS, PASS_RIDES, WORKS_RIDES) and vehicles.js (go-kart,
+  pickup-truck). A ride change reloads the page (on Earth that's one more Maps session).
+- **What's new, every World Drive run**: in /home/user/neptune-digital-twin,
+  `git fetch origin <default branch>` and read the player-facing commits since the last World Drive Reel
+  (`git log --no-merges --since=<date> --format='%ad %s' --date=short FETCH_HEAD | grep -i "world drive"`).
+  If something new and visible landed (a ride, a mode, a world/planet, a feature), make that the Reel:
+  hook = the new thing ("My game has an ice-cream van now." / "You can drive on Mars now."), 3 clips
+  showing it, voiceover names it, caption ends with "New in World Drive this week". Only show what
+  actually works in the build: record it and look at the contact sheet first. Skip internal changes
+  (tests, ads, accounts, review fixes).
+- If nothing new: a feature spotlight (water, sonic boom, flying, Moon gravity jumps, a weird ride, a
+  trick of the week), on the Moon or a planet by preference.
+- New planets: when the code adds one (look for a planet next to moon.js / moon-places.js, or a new
+  world switch on the globe panel), its first Reel is "You can drive on <planet> now", using its spot
+  ids the way the Moon's work, then log it in the Places table.
+
 ## Places
 
 Never repeat a place; log each one below. Ideas by series:

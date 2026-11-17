@@ -3,17 +3,17 @@
 Account: **@printyours.ca** (existing account; already connected to vidIQ and Zapier).
 "a day in 3D" is the series name on the slides, not the handle.
 
-## Mix: 3D printing, 2 AI × 3D printing days, 2 World Drive days
+## Mix (since Nov 17): 4 World Drive days, 3 news days
 
 | Day | Post |
 |---|---|
-| Mon | 3D printing news |
+| Mon | World Drive: what's new / feature spotlight (docs/worlddrive-reels.md) |
 | Tue | AI × 3D printing |
-| Wed | World Drive Reel: the Moon (see docs/worlddrive-reels.md) |
-| Thu | 3D printing news |
+| Wed | World Drive: the Moon and planets, showcase rides |
+| Thu | World Drive: what's new / feature spotlight |
 | Fri | AI × 3D printing |
-| Sat | World Drive Reel: Earth (see docs/worlddrive-reels.md) |
-| Sun | 3D printing news + weekly recap carousel |
+| Sat | World Drive: space tour, or Earth for a new Earth feature / "you pick, I drive" |
+| Sun | 3D printing news |
 
 AI × 3D printing topics — **AI 3D modeling is the priority**: text-to-3D and image-to-3D tools,
 generative CAD, AI-generated printable models. Also: AI slicers and print settings,
