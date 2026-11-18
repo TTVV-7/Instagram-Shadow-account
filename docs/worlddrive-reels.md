@@ -105,4 +105,4 @@ Never repeat a place; log each one below. Ideas by series:
 | 2026-11-11 | Moon | Tranquility Base (moon-apollo-11) | https://www.instagram.com/reel/DfoG7NEq5WS/ |
 | 2026-11-14 | Earth | Times Square, Golden Gate Bridge, Monaco harbour (montage) | https://www.instagram.com/reel/Dfvu6cbu3WM/ |
 | 2026-11-18 | Moon | Tycho (monster-truck), Mons Huygens (ice-cream-van), Hadley Rille (formula-racer) | (Wednesday) |
-| 2026-11-17 | Earth | Las Vegas Strip (concrete-mixer-truck), Shibuya (crawler-dozer-20t), Arc de Triomphe (articulated-dump-truck), Furka Pass (wheel-loader) — what's new: construction rides | (posting) |
+| 2026-11-17 | Earth | Las Vegas Strip (concrete-mixer-truck), Shibuya (crawler-dozer-20t), Arc de Triomphe (articulated-dump-truck), Furka Pass (wheel-loader) — what's new: construction rides | https://www.instagram.com/reel/Df3fisNPxxQ/ |

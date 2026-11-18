@@ -1,7 +1,7 @@
 # Reel · Tue Nov 17, 2026 · World Drive · What's new: construction rides earned with achievements
 Account: @printyours.ca · Format: stunt montage, 17.4s, free Kokoro voice ("Michael") + original music; real gameplay, no AI label
 File: posts/2026-11-17-worlddrive-construction/reel.mp4 · Showcase mode (local ?pro=1&feats=all) · Map credit on screen (Google + data providers)
-Status: PENDING
+Status: POSTED 2026-11-17 via vidIQ (real gameplay, Kokoro voice, no AI label) → https://www.instagram.com/reel/Df3fisNPxxQ/
 
 ## Caption
 My game has construction vehicles now 🚧🚜
