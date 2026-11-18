@@ -1,5 +1,5 @@
 # Reel · Wed Nov 18, 2026 · World Drive · the Moon, showcase rides (monster truck, ice-cream van, formula racer)
-Account: @printyours.ca · Format: stunt montage, 14.3s, free Kokoro voice ("Michael") + original music; real gameplay, no AI label
+Account: @printyours.ca · Format: stunt montage, 14.3s, vidIQ voice "Roger" (owner asked to change the voice, Nov 18) + original music; real gameplay, no AI label
 File: posts/2026-11-18-worlddrive-moon-rides/reel.mp4 · Recorded in showcase mode (local ?pro=1&feats=all) · Map credit on screen (NASA LRO)
 Status: DRAFT — ready; Wednesday's scheduled run posts it
 
