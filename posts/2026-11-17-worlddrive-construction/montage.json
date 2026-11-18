@@ -1,0 +1,37 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "shibuya",
+			"ride": "crawler-dozer-20t",
+			"place": "Shibuya Crossing",
+			"frames": 150,
+			"credit": "Google"
+		},
+		{
+			"spot": "vegas",
+			"ride": "concrete-mixer-truck",
+			"place": "Las Vegas Strip",
+			"frames": 150,
+			"credit": "Google; Landsat / Copernicus; Vexcel Imaging US, Inc.; Airbus"
+		},
+		{
+			"spot": "arc",
+			"ride": "articulated-dump-truck",
+			"place": "Arc de Triomphe",
+			"frames": 150,
+			"credit": "Google; Vexcel Imaging US, Inc.; Airbus"
+		},
+		{
+			"spot": "furka",
+			"ride": "wheel-loader",
+			"place": "Furka Pass",
+			"frames": 150,
+			"credit": "Google; ©swisstopo"
+		}
+	]
+}

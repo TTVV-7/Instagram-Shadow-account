@@ -1,0 +1,12 @@
+{
+  "cuts": [
+    {"clip": 1, "start": 1.4, "seconds": 3.6, "caption": "CEMENT MIXER."},
+    {"clip": 0, "start": 0.6, "seconds": 3.6, "caption": "BULLDOZER."},
+    {"clip": 2, "start": 0.8, "seconds": 3.6, "caption": "DUMP TRUCK."},
+    {"clip": 3, "start": 1.4, "seconds": 3.6, "caption": "LEVEL UP."}
+  ],
+  "voiceover": "posts/2026-11-17-worlddrive-construction/voiceover.mp3",
+  "music_seed": 61,
+  "end_seconds": 3.0,
+  "tagline": "New: earn construction rides."
+}
