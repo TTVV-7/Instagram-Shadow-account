@@ -3,17 +3,24 @@
 Account: **@printyours.ca** (existing account; already connected to vidIQ and Zapier).
 "a day in 3D" is the series name on the slides, not the handle.
 
-## Mix (since Nov 17): 4 World Drive days, 3 news days
+## Mix (since Nov 18): World Drive every day (owner's call; news Reels stopped)
 
-| Day | Post |
+News Reels averaged ~130 views; World Drive Reels 1,400–5,000+. Every day is a World Drive Reel
+(docs/worlddrive-reels.md). "What's new" in the game always comes first; otherwise rotate themes so no
+two days in a row look alike:
+
+| Day | World Drive theme |
 |---|---|
-| Mon | World Drive: what's new / feature spotlight (docs/worlddrive-reels.md) |
-| Tue | AI × 3D printing |
-| Wed | World Drive: the Moon and planets, showcase rides |
-| Thu | World Drive: what's new / feature spotlight |
-| Fri | AI × 3D printing |
-| Sat | World Drive: space tour, or Earth for a new Earth feature / "you pick, I drive" |
-| Sun | 3D printing news |
+| Mon | What's new / feature spotlight (water, sonic boom, flying, tricks) |
+| Tue | Ride showcase: one weird ride in 3 places ("My game has a lawn tractor") |
+| Wed | The Moon and planets, showcase rides |
+| Thu | What's new / feature spotlight |
+| Fri | Trick or stunt of the week (combo, big air, wipeout compilation) |
+| Sat | Space tour, or Earth for a new Earth feature / "you pick, I drive" from comments |
+| Sun | Best-of / "rate my driving" crash compilation from the week's clips |
+
+Earth costs a Google Maps session per drive: use it at most twice a week. The old news sections below
+are kept for reference only.
 
 AI × 3D printing topics — **AI 3D modeling is the priority**: text-to-3D and image-to-3D tools,
 generative CAD, AI-generated printable models. Also: AI slicers and print settings,
