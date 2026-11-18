@@ -64,7 +64,14 @@ printed object first, `"fill": true` + focus for photos, plain path for product 
 voiceover from vidIQ (Roger), captions synced to it, 2 s CTA end card. hi3D images only when the story
 has no real visuals (then the AI label is ON). The old slide format (render_reel.py) is retired for news.
 
-### Voiceover providers (owner approved both, Nov 15)
+### Voiceover providers
+**Default since Nov 18: the owner's own cloned voice, energetic** (owner's choice). `~/.venvs/chatterbox/bin/python
+tools/clone_tts.py <out.mp3> "<script>" 0.7 0.35` (Chatterbox, MIT, free, ~90 s on CPU). The reference
+recording is the owner's voice memo at ~/voice/owner-ref.wav — private, never commit it or any raw copy.
+If the venv or the reference is missing (new machine), fall back to the list below and tell the owner
+(the reference has to be re-sent; the venv setup is in the script's docstring).
+
+Fallbacks: (owner approved both, Nov 15)
 0. Google Cloud Text-to-Speech (owner approved, Nov 16): `python3 tools/google_tts.py <out.mp3> "<script>"`,
    voice en-US-Chirp3-HD-Charon, rate 1.08, on the `google_api` key. Likely free (free tier ~1M chars/month).
    Needs the Cloud Text-to-Speech API enabled on Google Cloud project 979605278581; until then it errors
