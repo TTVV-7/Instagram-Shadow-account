@@ -1,7 +1,7 @@
 # Reel · Wed Nov 18, 2026 · World Drive · the Moon, showcase rides (monster truck, ice-cream van, formula racer)
 Account: @printyours.ca · Format: stunt montage, 14.3s, owner's own cloned voice (Chatterbox, energetic) + original music; real gameplay, no AI label
 File: posts/2026-11-18-worlddrive-moon-rides/reel.mp4 · Recorded in showcase mode (local ?pro=1&feats=all) · Map credit on screen (NASA LRO)
-Status: DRAFT — ready; Wednesday's scheduled run posts it
+Status: POSTED 2026-11-18 via vidIQ (owner's cloned voice, real gameplay, no AI label) → https://www.instagram.com/reel/Df6GEYdT3zO/
 
 ## Caption
 I put an ice-cream van on the Moon 🍦🌕
