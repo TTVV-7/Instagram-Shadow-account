@@ -1,7 +1,7 @@
 # Reel · Thu Nov 19, 2026 · World Drive · What's new: Mars
 Account: @printyours.ca · Format: stunt montage, 16.3s, owner's cloned voice (Chatterbox, energetic) + original music; real gameplay, no AI label
 File: posts/2026-11-19-worlddrive-mars/reel.mp4 · Showcase mode (local ?pro=1&feats=all) · Map credit on screen (Mars: NASA data)
-Status: PENDING
+Status: POSTED 2026-11-19 via vidIQ (owner's cloned voice, real gameplay, no AI label) → https://www.instagram.com/reel/Df8wj7LNhzB/
 
 ## Caption
 I put Mars in my game 🔴🚜
