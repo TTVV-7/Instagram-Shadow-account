@@ -1,0 +1,12 @@
+{
+  "cuts": [
+    {"clip": 2, "start": 0.4, "seconds": 3.4, "caption": "MARS. IN A LAWN TRACTOR."},
+    {"clip": 0, "start": 0.6, "seconds": 3.3, "caption": "OLYMPUS MONS."},
+    {"clip": 1, "start": 0.6, "seconds": 3.3, "caption": "THE BIG CANYON."},
+    {"clip": 3, "start": 0.6, "seconds": 3.3, "caption": "WHERE CURIOSITY LANDED."}
+  ],
+  "voiceover": "posts/2026-11-19-worlddrive-mars/voiceover.mp3",
+  "music_seed": 73,
+  "end_seconds": 3.0,
+  "tagline": "Now with Mars."
+}

@@ -1,0 +1,37 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "mars-olympus-mons",
+			"ride": "dune-buggy",
+			"place": "Olympus Mons",
+			"frames": 120,
+			"credit": ""
+		},
+		{
+			"spot": "mars-valles-marineris",
+			"ride": "hypercar",
+			"place": "Valles Marineris",
+			"frames": 120,
+			"credit": ""
+		},
+		{
+			"spot": "mars-perseverance",
+			"ride": "lawn-tractor",
+			"place": "Jezero crater",
+			"frames": 120,
+			"credit": ""
+		},
+		{
+			"spot": "mars-curiosity",
+			"ride": "hovercraft",
+			"place": "Bradbury Landing",
+			"frames": 120,
+			"credit": ""
+		}
+	]
+}
