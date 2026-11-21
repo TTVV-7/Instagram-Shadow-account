@@ -107,3 +107,4 @@ Never repeat a place; log each one below. Ideas by series:
 | 2026-11-18 | Moon | Tycho (monster-truck), Mons Huygens (ice-cream-van), Hadley Rille (formula-racer) | https://www.instagram.com/reel/Df6GEYdT3zO/ |
 | 2026-11-17 | Earth | Las Vegas Strip (concrete-mixer-truck), Shibuya (crawler-dozer-20t), Arc de Triomphe (articulated-dump-truck), Furka Pass (wheel-loader) — what's new: construction rides | https://www.instagram.com/reel/Df3fisNPxxQ/ |
 | 2026-11-19 | Mars | Jezero (lawn-tractor), Olympus Mons (dune-buggy), Valles Marineris (hypercar), Bradbury Landing (hovercraft) — what's new: Mars | https://www.instagram.com/reel/Df8wj7LNhzB/ |
+| 2026-11-20 | Earth + Moon | Times Square (flying-saucer), Sydney Harbour Bridge (rocket-dragster), Hadley Rille / Apollo 15 (lunar-rover) — what's new: three new rides | https://www.instagram.com/reel/Df_OJwLBMDK/ |

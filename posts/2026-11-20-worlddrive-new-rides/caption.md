@@ -1,6 +1,6 @@
 # World Drive: three new rides (UFO, rocket dragster, moon rover)
 
-Status: READY (posting automatically, Nov 20)
+Status: POSTED 2026-11-20 — https://www.instagram.com/reel/Df_OJwLBMDK/
 
 ## Caption
 I added a UFO to my game 🛸 It hovers, it banks, it bounces off Times Square. Plus a rocket dragster on the Sydney Harbour Bridge (fastest off the line, turns like a train) and a moon rover at Hadley Rille, where Apollo 15 drove the real one.
