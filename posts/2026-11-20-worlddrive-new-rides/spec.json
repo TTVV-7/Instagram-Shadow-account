@@ -1,0 +1,11 @@
+{
+  "cuts": [
+    {"clip": 0, "start": 1.5, "seconds": 4.3, "caption": "A UFO."},
+    {"clip": 1, "start": 0.4, "seconds": 2.8, "caption": "ROCKET DRAGSTER."},
+    {"clip": 2, "start": 1.4, "seconds": 4.5, "caption": "MOON ROVER."}
+  ],
+  "voiceover": "posts/2026-11-20-worlddrive-new-rides/voiceover.mp3",
+  "music_seed": 20,
+  "end_seconds": 2.5,
+  "tagline": "Three new rides."
+}

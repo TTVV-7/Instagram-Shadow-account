@@ -1,0 +1,30 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "manhattan",
+			"ride": "flying-saucer",
+			"place": "Times Square",
+			"frames": 180,
+			"credit": "Google; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "sydney",
+			"ride": "rocket-dragster",
+			"place": "Sydney Harbour Bridge",
+			"frames": 180,
+			"credit": "Google; Airbus; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "moon-apollo-15",
+			"ride": "lunar-rover",
+			"place": "Hadley Rille",
+			"frames": 180,
+			"credit": "Moon: NASA LRO (LROC, LOLA)"
+		}
+	]
+}
