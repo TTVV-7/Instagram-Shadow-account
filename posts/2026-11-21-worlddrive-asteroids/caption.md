@@ -1,6 +1,6 @@
 # World Drive: asteroids (Vesta and Ceres)
 
-Status: READY (posting automatically, Nov 21)
+Status: POSTED 2026-11-21 — https://www.instagram.com/reel/DgB4SeZNRbz/
 
 ## Caption
 I put a city bus on an asteroid 🚌☄️ That's Vesta, on a mountain more than twice as tall as Everest. Then a golf cart breaking the sound barrier on Ceres, and a police car doing donuts in Occator crater. Real NASA Dawn maps, almost no gravity.
