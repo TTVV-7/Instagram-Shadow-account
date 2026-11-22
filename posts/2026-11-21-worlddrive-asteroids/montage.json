@@ -1,0 +1,30 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "vesta-rheasilvia-peak",
+			"ride": "city-bus",
+			"place": "Rheasilvia's central peak",
+			"frames": 180,
+			"credit": ""
+		},
+		{
+			"spot": "ceres-ahuna-mons",
+			"ride": "golf-cart",
+			"place": "Ahuna Mons",
+			"frames": 180,
+			"credit": ""
+		},
+		{
+			"spot": "ceres-occator",
+			"ride": "police-cruiser",
+			"place": "Occator",
+			"frames": 180,
+			"credit": ""
+		}
+	]
+}

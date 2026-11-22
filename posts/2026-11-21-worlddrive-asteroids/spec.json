@@ -1,0 +1,26 @@
+{
+  "cuts": [
+    {
+      "clip": 0,
+      "start": 2.0,
+      "seconds": 4.0,
+      "caption": "A BUS. ON AN ASTEROID."
+    },
+    {
+      "clip": 1,
+      "start": 1.4,
+      "seconds": 3.6,
+      "caption": "SONIC BOOM."
+    },
+    {
+      "clip": 2,
+      "start": 2.0,
+      "seconds": 3.9,
+      "caption": "COP DONUTS."
+    }
+  ],
+  "voiceover": "posts/2026-11-21-worlddrive-asteroids/voiceover.mp3",
+  "music_seed": 21,
+  "end_seconds": 2.5,
+  "tagline": "Now with Vesta and Ceres."
+}
