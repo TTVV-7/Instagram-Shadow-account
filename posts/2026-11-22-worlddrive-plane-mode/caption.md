@@ -1,6 +1,6 @@
 # World Drive: every car turns into a plane (plane mode, bail-out, parachute)
 
-Status: READY (posting automatically, Nov 22)
+Status: POSTED 2026-11-22 — https://www.instagram.com/reel/DgEXUmwBEem/
 
 ## Caption
 My cars turn into planes now ✈️🛺 Press F and a tuk-tuk on Mars grows wings. A farm truck flies over Copernicus crater on the Moon. Done flying? Bail out, freefall, parachute.

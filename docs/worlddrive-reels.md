@@ -109,3 +109,4 @@ Never repeat a place; log each one below. Ideas by series:
 | 2026-11-19 | Mars | Jezero (lawn-tractor), Olympus Mons (dune-buggy), Valles Marineris (hypercar), Bradbury Landing (hovercraft) — what's new: Mars | https://www.instagram.com/reel/Df8wj7LNhzB/ |
 | 2026-11-20 | Earth + Moon | Times Square (flying-saucer), Sydney Harbour Bridge (rocket-dragster), Hadley Rille / Apollo 15 (lunar-rover) — what's new: three new rides | https://www.instagram.com/reel/Df_OJwLBMDK/ |
 | 2026-11-21 | Vesta + Ceres | Rheasilvia's central peak (city-bus), Ahuna Mons (golf-cart), Occator (police-cruiser) — space tour: asteroids | https://www.instagram.com/reel/DgB4SeZNRbz/ |
+| 2026-11-22 | Mars + Moon | Noctis Labyrinthus (tuk-tuk, plane + parachute), Copernicus crater (farm-truck, plane) — what's new: plane mode, bail-out, parachute | https://www.instagram.com/reel/DgEXUmwBEem/ |
