@@ -86,6 +86,20 @@ function stuntScript( frames ) {
 
 }
 
+// PLANE=1: plane mode instead. F turns the ride into a plane, W + Space climb, Z loops, E rolls, then
+// T bails out into the freefall (W dives) and the parachute opens by itself near the ground.
+function planeScript( frames ) {
+
+	const s = t => Math.round( t * frames );
+	const tap = ( f, key ) => [ [ f, 'down', key ], [ f + 2, 'up', key ] ];
+	return [
+		[ 0, 'down', 'w' ], ...tap( s( 0.04 ), 'f' ), [ s( 0.08 ), 'down', 'Space' ], [ s( 0.3 ), 'up', 'Space' ],
+		[ s( 0.32 ), 'down', 'd' ], [ s( 0.38 ), 'up', 'd' ], ...tap( s( 0.4 ), 'z' ), ...tap( s( 0.52 ), 'e' ),
+		...tap( s( 0.58 ), 't' ),
+	].sort( ( a, b ) => a[ 0 ] - b[ 0 ] );
+
+}
+
 async function releaseAll( page ) {
 
 	for ( const k of [ 'w', 'a', 'd', 'Shift', 'Space' ] ) await page.keyboard.up( k );
@@ -153,7 +167,7 @@ async function releaseAll( page ) {
 		const dir = path.join( outDir, `clip-${ i }` );
 		fs.mkdirSync( dir, { recursive: true } );
 		const frames = Math.round( SECONDS * FPS );
-		const events = stuntScript( frames );
+		const events = process.env.PLANE ? planeScript( frames ) : stuntScript( frames );
 		let next = 0;
 		await page.evaluate( () => window.worldDriveCapture.start() );
 		for ( let f = 0; f < frames; f ++ ) {

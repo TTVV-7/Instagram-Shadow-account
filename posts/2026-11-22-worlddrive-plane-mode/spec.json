@@ -1,0 +1,11 @@
+{
+  "cuts": [
+    {"clip": 0, "start": 0.2, "seconds": 2.6, "caption": "IT GROWS WINGS."},
+    {"clip": 1, "start": 3.2, "seconds": 3.6, "caption": "FARM TRUCK. FLYING."},
+    {"clip": 0, "start": 6.6, "seconds": 3.8, "caption": "BAIL OUT."}
+  ],
+  "voiceover": "posts/2026-11-22-worlddrive-plane-mode/voiceover.mp3",
+  "music_seed": 22,
+  "end_seconds": 2.5,
+  "tagline": "Every car is a plane now."
+}

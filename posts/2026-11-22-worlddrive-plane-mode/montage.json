@@ -1,0 +1,23 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "mars-noctis-labyrinthus",
+			"ride": "tuk-tuk",
+			"place": "Noctis Labyrinthus",
+			"frames": 360,
+			"credit": ""
+		},
+		{
+			"spot": "moon-copernicus",
+			"ride": "farm-truck",
+			"place": "Copernicus crater",
+			"frames": 360,
+			"credit": "Moon: NASA LRO (LROC, LOLA)"
+		}
+	]
+}
