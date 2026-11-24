@@ -110,3 +110,4 @@ Never repeat a place; log each one below. Ideas by series:
 | 2026-11-20 | Earth + Moon | Times Square (flying-saucer), Sydney Harbour Bridge (rocket-dragster), Hadley Rille / Apollo 15 (lunar-rover) — what's new: three new rides | https://www.instagram.com/reel/Df_OJwLBMDK/ |
 | 2026-11-21 | Vesta + Ceres | Rheasilvia's central peak (city-bus), Ahuna Mons (golf-cart), Occator (police-cruiser) — space tour: asteroids | https://www.instagram.com/reel/DgB4SeZNRbz/ |
 | 2026-11-22 | Mars + Moon | Noctis Labyrinthus (tuk-tuk, plane + parachute), Copernicus crater (farm-truck, plane) — what's new: plane mode, bail-out, parachute | https://www.instagram.com/reel/DgEXUmwBEem/ |
+| 2026-11-23 | Earth (bank) | Golden Gate, Monaco, Shibuya, Arc de Triomphe (all monster-truck, Earth bank 2026-11-23) — what's new: trick mode; first Earth-opener Reel | https://www.instagram.com/reel/DgH57ypBv7m/ |

@@ -1,6 +1,6 @@
 # World Drive: trick mode (monster truck off the Golden Gate, Monaco, Tokyo, Paris)
 
-Status: READY (posting automatically, Nov 23)
+Status: POSTED 2026-11-23 — https://www.instagram.com/reel/DgH57ypBv7m/
 
 ## Caption
 I took a monster truck off the Golden Gate Bridge 🌉💥 Then Monaco, Shibuya Crossing and the Arc de Triomphe. New this week: walls slide you along by default, but flip on Trick mode in the pause menu and they throw you instead.
