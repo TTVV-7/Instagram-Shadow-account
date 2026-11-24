@@ -1,0 +1,12 @@
+{
+  "cuts": [
+    {"clip": 0, "start": 1.1, "seconds": 3.0, "caption": "OFF THE GOLDEN GATE."},
+    {"clip": 1, "start": 1.6, "seconds": 2.4, "caption": "MONACO."},
+    {"clip": 4, "start": 2.9, "seconds": 2.2, "caption": "TOKYO."},
+    {"clip": 2, "start": 2.6, "seconds": 2.6, "caption": "PARIS."}
+  ],
+  "voiceover": "posts/2026-11-23-worlddrive-trick-mode/voiceover.mp3",
+  "music_seed": 23,
+  "end_seconds": 2.5,
+  "tagline": "New: trick mode."
+}

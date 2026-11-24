@@ -1,0 +1,44 @@
+{
+	"fps": 30,
+	"size": [
+		540,
+		960
+	],
+	"clips": [
+		{
+			"spot": "golden-gate",
+			"ride": "monster-truck",
+			"place": "Golden Gate Bridge",
+			"frames": 180,
+			"credit": "Google; Landsat / Copernicus; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "monaco",
+			"ride": "monster-truck",
+			"place": "Monaco harbour",
+			"frames": 180,
+			"credit": "Google; Airbus"
+		},
+		{
+			"spot": "arc",
+			"ride": "monster-truck",
+			"place": "Arc de Triomphe",
+			"frames": 180,
+			"credit": "Google; Airbus; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "vegas",
+			"ride": "monster-truck",
+			"place": "Las Vegas Strip",
+			"frames": 180,
+			"credit": "Google; Landsat / Copernicus; Airbus; Vexcel Imaging US, Inc."
+		},
+		{
+			"spot": "shibuya",
+			"ride": "monster-truck",
+			"place": "Shibuya Crossing",
+			"frames": 180,
+			"credit": "Google"
+		}
+	]
+}

@@ -115,6 +115,8 @@ async function releaseAll( page ) {
 	let ride = PLAN[ 0 ].ride;
 	await page.addInitScript( () => {
 
+		// Trick mode on (walls bounce and throw the car up; since Nov 23 the default is to slide along them).
+		try { localStorage.setItem( 'world-drive.tricks', 'on' ); } catch {}
 		const r = window.name.startsWith( 'ride:' ) ? window.name.slice( 5 ) : '';
 		if ( r ) try { localStorage.setItem( 'world-drive.vehicle', r ); } catch {}
 
@@ -167,7 +169,9 @@ async function releaseAll( page ) {
 		const dir = path.join( outDir, `clip-${ i }` );
 		fs.mkdirSync( dir, { recursive: true } );
 		const frames = Math.round( SECONDS * FPS );
-		const events = process.env.PLANE ? planeScript( frames ) : stuntScript( frames );
+		// CALM=still: parked, no keys. CALM=1: no boost, a slow arc, to show what's beside the start (e.g. the Moon and Mars hardware).
+		const calm = [ [ 0, 'down', 'w' ], [ Math.round( frames * 0.15 ), 'down', 'a' ], [ Math.round( frames * 0.7 ), 'up', 'a' ] ];
+		const events = process.env.PLANE ? planeScript( frames ) : process.env.CALM === 'still' ? [] : process.env.CALM ? calm : stuntScript( frames );
 		let next = 0;
 		await page.evaluate( () => window.worldDriveCapture.start() );
 		for ( let f = 0; f < frames; f ++ ) {
