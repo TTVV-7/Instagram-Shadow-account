@@ -1,5 +1,8 @@
 # Content plan — @printyours.ca · "a day in 3D" series
 
+> **Stopped Nov 24, 2026 (owner's call).** The daily scheduled Reel task is disabled; nothing posts automatically.
+> Last Reel: https://www.instagram.com/reel/DgH57ypBv7m/. Everything below is kept for reference.
+
 Account: **@printyours.ca** (existing account; already connected to vidIQ and Zapier).
 "a day in 3D" is the series name on the slides, not the handle.
 
