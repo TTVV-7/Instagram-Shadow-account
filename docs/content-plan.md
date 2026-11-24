@@ -19,8 +19,26 @@ two days in a row look alike:
 | Sat | Space tour, or Earth for a new Earth feature / "you pick, I drive" from comments |
 | Sun | Best-of / "rate my driving" crash compilation from the week's clips |
 
-Earth costs a Google Maps session per drive: use it at most twice a week. The old news sections below
-are kept for reference only.
+Earth costs a Google Maps session per page load: at most two Earth recording sessions a week. The old
+news sections below are kept for reference only.
+
+### Rule since Nov 23: every Reel OPENS ON EARTH (the data)
+Swipe-away rate in the first seconds decides reach, and it splits cleanly on one thing: the opening shot.
+
+| Opens on | Reels | Swiped away | Views |
+|---|---|---|---|
+| A famous Earth place | Earth montage, construction, three new rides (Times Square) | 28–37% | 300–7,200 |
+| Moon / Mars / asteroid ground | Apollo 11, Moon rides, Mars, Vesta+Ceres, plane mode | 54–61% | 136–1,100 |
+
+Same voice, same length, same editing in both groups — the voice is not the problem. Grey or red dirt
+reads as nothing in the first second; Times Square reads instantly.
+
+So: **the first 2–3 s of every Reel are a famous Earth place, mid-stunt**, then the feature (space
+included: "Times Square… then I left Earth"). To keep Earth's cost down, record an **Earth bank** in
+ONE page load (same ride for every place = one Maps session) of 5–6 famous places
+(manhattan, golden-gate, monaco, sydney, arc, shibuya, vegas, grand-canyon), into ~/earth-bank/<date>/
+(off the repo; keep the montage.json). Record a new bank on Monday (or when a new ride should star in
+it); reuse its clips the rest of the week, a different place each day. Space-only Reels: no more.
 
 AI × 3D printing topics — **AI 3D modeling is the priority**: text-to-3D and image-to-3D tools,
 generative CAD, AI-generated printable models. Also: AI slicers and print settings,
