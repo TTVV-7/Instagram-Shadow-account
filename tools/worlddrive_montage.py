@@ -115,8 +115,10 @@ def main():
     last, total = None, 0
     for cut in cuts:
         i = cut["clip"]
-        clip = info["clips"][i]
-        d = os.path.join(MONT, f"clip-{i}")
+        # "dir": take this cut from another recording, e.g. the week's Earth bank (~/earth-bank/<date>).
+        mont = os.path.expanduser(cut.get("dir", MONT))
+        clip = (json.load(open(os.path.join(mont, "montage.json"))) if mont != MONT else info)["clips"][i]
+        d = os.path.join(mont, f"clip-{i}")
         names = sorted(f for f in os.listdir(d) if f.endswith(".jpg"))
         start = int(cut.get("start", TRIM) * FPS)
         names = names[start:start + int(cut.get("seconds", CLIP_S) * FPS)]
